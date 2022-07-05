@@ -1,23 +1,25 @@
-import React, { Component } from "react";
+import React from 'react';
 
-class InputTodo extends Component {
+class InputTodo extends React.Component {
   state = {
-    title: "",
+    title: '',
   };
+
   handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
+
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.title.trim()) {
       this.props.addTodoItemProps(this.state.title);
       this.setState({
-        title: "",
+        title: '',
       });
     } else {
-      alert("please enter title");
+      alert('please enter title');
     }
   };
 

@@ -1,5 +1,6 @@
-import React from "react";
-import styles from "./TodoItem.module.css";
+import React from 'react';
+import styles from './TodoItem.module.css';
+
 class TodoItem extends React.Component {
   state = {
     editing: false,
@@ -12,24 +13,25 @@ class TodoItem extends React.Component {
   };
 
   handleUpdatedDone = (event) => {
-    if (event.key === "Enter") {
+    if (event.key === 'Enter') {
       this.setState({ editing: false });
     }
   };
+
   render() {
     const viewMode = {};
     const editingMode = {};
     if (this.state.editing) {
-      viewMode.display = "none";
+      viewMode.display = 'none';
     } else {
-      editingMode.display = "none";
+      editingMode.display = 'none';
     }
 
     const completedStyle = {
-      fontStyle: "italic",
-      color: "#595959",
+      fontStyle: 'italic',
+      color: '#595959',
       opacity: 0.4,
-      textDecoration: "line-through",
+      textDecoration: 'line-through',
     };
     const { id, title, completed } = this.props.todo;
     return (
