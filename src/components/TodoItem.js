@@ -8,20 +8,17 @@ class TodoItem extends React.Component {
       opacity: 0.4,
       textDecoration: "line-through",
     };
+    const { id, title, completed } = this.props.todo;
     return (
       <li className={styles.item}>
         <input
           type="checkbox"
           className={styles.checkbox}
           checked={this.props.todo.completed}
-          onChange={() => this.props.handleChangeProps(this.props.todo.id)}
+          onChange={() => this.props.handleChangeProps(id)}
         />
-        <button onClick={() => this.props.deleteItem(this.props.todo.id)}>
-          delete
-        </button>
-        <span style={this.props.todo.completed ? completedStyle : null}>
-          {this.props.todo.title}
-        </span>
+        <button onClick={() => this.props.deleteItem(id)}>delete</button>
+        <span style={completed ? completedStyle : null}>{title}</span>
       </li>
     );
   }
