@@ -1,11 +1,11 @@
+/*eslint-disable */
 import ReactDOM from 'react-dom/client';
-
-import TodoContainer from './components/TodoContainer.js';
-import './App.css';
+import React from 'react';
+import TodoContainer from './functionBased/components/TodoContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <TodoContainer />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
