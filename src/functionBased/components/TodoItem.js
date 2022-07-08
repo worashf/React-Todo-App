@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FaTrash } from 'react-icons/fa';
 import styles from './TodoItem.module.css';
-
+/* eslint-disable*/
 const TodoItem = (props) => {
   const [editing, setEditing] = useState(false);
 

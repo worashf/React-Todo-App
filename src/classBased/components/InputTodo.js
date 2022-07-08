@@ -1,9 +1,12 @@
 import React from 'react';
-
+/* eslint-disable*/
 class InputTodo extends React.Component {
-  state = {
-    title: '',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+    };
+  }
 
   handleChange = (e) => {
     this.setState({

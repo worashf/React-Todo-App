@@ -1,6 +1,6 @@
 import React from 'react';
 import TodoItem from './TodoItem';
-
+/* eslint-disable*/
 class TodoList extends React.Component {
   render() {
     return (

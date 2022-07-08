@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TodoItem.module.css';
-
+/* eslint-disable*/
 class TodoItem extends React.Component {
   state = {
     editing: false,

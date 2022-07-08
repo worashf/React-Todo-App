@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
-
+/* eslint-disable*/
 const InputTodo = (props) => {
   const [inputText, setInputText] = useState({
     title: '',

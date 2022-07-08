@@ -1,8 +1,8 @@
 /*eslint-disable */
 
 import React from 'react';
-import PropTypes from 'prop-types';
-import TodoItem from './TodoItem.js';
+
+import TodoItem from './TodoItem';
 
 const TodoList = (props) => {
   const { todos, setUpdate, handleChangeProps, deleteItem } = props;

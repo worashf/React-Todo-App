@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import TodoList from './TodoList.js';
-import Header from './Header.js';
-import InputTodo from './InputTodo.js';
+import TodoList from './TodoList';
+import Header from './Header';
+import InputTodo from './InputTodo';
 
 import './App.css';
-
+/* eslint-disable*/
 const TodoContainer = () => {
   const [todos, setTodos] = useState(() => {
     const rawData = window.localStorage.getItem('todos');
@@ -24,7 +24,7 @@ const TodoContainer = () => {
           };
         }
         return todo;
-      }),
+      })
     );
   };
 
@@ -49,7 +49,7 @@ const TodoContainer = () => {
           todo.title = updatedTitle;
         }
         return todo;
-      }),
+      })
     );
   };
 
