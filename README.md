@@ -2,7 +2,7 @@
 
 # React-Todo-App
 
-> This project is created to demonistrate how to create react application. To learn react class compoent, events, fucntional componets and hooks.
+> This project is created to demonistrate how to create react application. To learn react class component, events, functional components and hooks.
 
 ## Built With
 
