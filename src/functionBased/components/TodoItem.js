@@ -14,7 +14,7 @@ const TodoItem = (props) => {
 
   const handleUpdatedDone = (event) => {
     if (event.key === 'Enter') {
-      setEditing({ editing: false });
+      setEditing(false);
     }
   };
 
