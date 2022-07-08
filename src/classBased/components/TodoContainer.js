@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import TodoList from './TodoList';
 import Header from './Header';
 import InputTodo from './InputTodo';
+import './App.css';
 /* eslint-disable*/
 class TodoContainer extends React.Component {
   constructor(props) {
